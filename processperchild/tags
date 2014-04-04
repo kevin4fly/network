@@ -1,0 +1,27 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+LISTENQ	sock_util.h	21;"	d
+MAXLINE	sock_util.h	20;"	d
+SIG_UTIL_H	sig_util.h	2;"	d
+SOCK_UTIL_H	sock_util.h	2;"	d
+TOOL_H	tool.h	2;"	d
+accept_sock	sock_util.h	/^int accept_sock(int listenfd);$/;"	p	signature:(int listenfd)
+bind_sock	sock_util.c	/^int bind_sock(int port)$/;"	f	signature:(int port)
+bind_sock	sock_util.h	/^int bind_sock(int port);$/;"	p	signature:(int port)
+chld_handler	sig_util.c	/^void chld_handler(int signo)$/;"	f	signature:(int signo)
+chld_handler	sig_util.h	/^void chld_handler(int signo);$/;"	p	signature:(int signo)
+do_communication	sock_util.c	/^void do_communication(int connfd)$/;"	f	signature:(int connfd)
+do_communication	sock_util.h	/^void do_communication(int connfd);$/;"	p	signature:(int connfd)
+handle_connection	sock_util.c	/^void handle_connection(int listenfd)$/;"	f	signature:(int listenfd)
+handle_connection	sock_util.h	/^void handle_connection(int listenfd);$/;"	p	signature:(int listenfd)
+listen_sock	sock_util.c	/^void listen_sock(int listenfd)$/;"	f	signature:(int listenfd)
+listen_sock	sock_util.h	/^void listen_sock(int listenfd);$/;"	p	signature:(int listenfd)
+main	client.c	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	server.c	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+perror_exit	tool.h	7;"	d
+show_peer_info	sock_util.c	/^void show_peer_info(int connfd)$/;"	f	signature:(int connfd)
+show_peer_info	sock_util.h	/^void show_peer_info(int connfd);$/;"	p	signature:(int connfd)
