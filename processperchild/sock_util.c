@@ -15,7 +15,7 @@ int bind_sock(int port)
         perror_exit("socket error");
     }
 
-    /* fill and socket address struct */
+    /* fill the socket address struct */
     memset(&socket_addr,0,sizeof(struct sockaddr_in));
     socket_addr.sin_family = AF_INET;
     socket_addr.sin_port = htons(port);
@@ -55,15 +55,15 @@ void handle_connection(int listenfd)
     {
         if ((connfd = accept(listenfd,(struct sockaddr *)&clitaddr,&socklen)) < 0)
         {
-            /* if accept is interrupted by signal, just continue. else return
-             * error*/
+            /* if accept is interrupted by signal, just continue. else print
+             * error and exit */
             if (errno == EINTR)
             {
                 continue;
             }
             else
             {
-                perror_exit("accept errno");
+                perror_exit("accept error");
             }
         }
         /* show the new connected client information */

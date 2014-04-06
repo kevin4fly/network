@@ -26,9 +26,6 @@ int bind_sock(int port);
 /* listen the socket */
 void listen_sock(int listenfd);
 
-/* accept the client's socket connection */
-int accept_sock(int listenfd);
-
 /* handle the connected clients */
 void handle_connection(int listenfd);
         

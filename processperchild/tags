@@ -9,7 +9,6 @@ MAXLINE	sock_util.h	20;"	d
 SIG_UTIL_H	sig_util.h	2;"	d
 SOCK_UTIL_H	sock_util.h	2;"	d
 TOOL_H	tool.h	2;"	d
-accept_sock	sock_util.h	/^int accept_sock(int listenfd);$/;"	p	signature:(int listenfd)
 bind_sock	sock_util.c	/^int bind_sock(int port)$/;"	f	signature:(int port)
 bind_sock	sock_util.h	/^int bind_sock(int port);$/;"	p	signature:(int port)
 chld_handler	sig_util.c	/^void chld_handler(int signo)$/;"	f	signature:(int signo)
