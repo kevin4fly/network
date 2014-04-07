@@ -140,12 +140,6 @@ void handle_connection(int listenfd)
                     }
                 }
             }
-
-            /* no more readable fd in the fd set */
-            if (--nready < 0)
-            {
-                break;
-            }
         }
     }
 }
